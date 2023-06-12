@@ -1,0 +1,246 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	box-sizing: border-box;
+}
+
+
+/* navbar */
+
+.navbar-nav{
+	margin-right: 0 !important;
+	padding-right: 100px;
+}
+
+.navbar{
+	background-color: #c19859;
+	color: #e3ded1 !important;
+}
+
+.nav-item a{
+	color: white !important;
+	text-decoration: none;
+}
+
+.nav-item{
+	padding-left: 2px;
+}
+.nav-link a:hover{
+	background-color: white;
+}
+.navbar-brand{
+	color: white !important;
+	padding-left: 100px;
+}
+.navbar-brand a:hover {
+  background-color: #ddd;
+  
+}
+
+#navbar button{
+	color: white !important;
+}
+
+.masthead {
+	background-color: #0a193d;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 12rem 0;
+    background: linear-gradient(to bottom,
+        #{fade-out($black, 0.7)} 0%,
+        #{fade-out($black, 0.3)} 75%,
+        $black 100%),
+    url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    h1 {
+        font-family: $font-family-special;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.8rem;
+        background: linear-gradient(fade-out($white, 0.1), fade-out($white, 1));
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    h2 {
+        max-width: 20rem;
+        font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        h1 {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 100vh;
+        padding: 0;
+
+        h1 {
+            font-size: 6.5rem;
+            line-height: 6.5rem;
+            letter-spacing: 0.8rem;
+        }
+
+        h2 {
+            max-width: 30rem;
+            font-size: 1.25rem;
+        }
+    }
+}
+/* banner */
+
+#banner-container{
+	background-color: #0a193d;
+	color: white !important;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 100%;
+	
+}
+
+#banner-row img{
+	max-width: 55%;
+	height: auto;
+	display: block;
+	padding-left: 30px;
+}
+
+#banner-row h3, p{
+
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+#banner-row a{
+	background-color: #c19859 !important;
+	color: #e3ded1 !important;
+	border: none;
+	margin-left: 20px;
+	margin-top: 20px;
+	
+}
+#banner-col{
+	padding-top: 50px;
+	padding-left: 20px;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+	
+  }
+}
+
+/* Float  columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  min-height: 500px;
+}
+
+
+
+/* service */
+#service{
+	background-color: #ffffff;
+	color: #0a193d;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#service h1{
+	padding-bottom: 70px;
+}
+
+/* about */
+
+#about{
+	background-color: #c19859;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#about h1{
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#about-col ul{
+	padding-top: 30px;
+	padding-left: 50px;
+}
+
+#about-col ul li{
+	padding-top: 15px;
+	
+}
+
+
+
+
+
+/* media */
+@media only screen and (max-width: 987px){
+	.navbar-brand{
+		padding-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#banner-row img{
+		padding-top: 20px;
+	}
+
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+
+.social-col{
+	width: 33%;
+}
+
+}
